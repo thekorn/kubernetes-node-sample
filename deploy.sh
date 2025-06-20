@@ -12,4 +12,4 @@ echo "Applying Kubernetes manifests..."
 kubectl apply -f k8s/
 
 echo "Deployment complete!"
-echo "App should be available at: http://hallo.local"
+echo "App should be available at: http://hello.local"
