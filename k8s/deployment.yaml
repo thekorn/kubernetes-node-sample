@@ -17,6 +17,7 @@ spec:
       containers:
         - name: node-sample-app
           image: docker.io/library/node-sample-app:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 3000
           env:
