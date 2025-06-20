@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Build and deploy script for k3s
 
@@ -12,4 +12,4 @@ echo "Applying Kubernetes manifests..."
 kubectl apply -f k8s/
 
 echo "Deployment complete!"
-echo "App should be available at: http://hallo.fritz.box"
+echo "App should be available at: http://hallo.local"

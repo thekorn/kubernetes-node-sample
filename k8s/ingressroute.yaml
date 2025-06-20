@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - web
   routes:
-  - match: Host(`hallo.fritz.box`)
+  - match: Host(`hallo.local`)
     kind: Rule
     services:
     - name: node-sample-service

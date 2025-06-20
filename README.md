@@ -77,15 +77,15 @@ chmod +x deploy.sh
 ## Access the Application
 
 Once deployed, the application will be available at:
-- **http://hallo.fritz.box**
+- **http://hallo.local**
 
-Make sure your DNS or `/etc/hosts` file resolves `hallo.fritz.box` to your k3s cluster IP.
+Make sure your DNS or `/etc/hosts` file resolves `hallo.local` to your k3s cluster IP.
 
 ## Configuration
 
 ### Traefik Routing
 
-The application uses Traefik IngressRoute to route traffic from `hallo.fritz.box` to the service. The configuration is in `k8s/ingressroute.yaml`.
+The application uses Traefik IngressRoute to route traffic from `hallo.local` to the service. The configuration is in `k8s/ingressroute.yaml`.
 
 ### Resource Limits
 
