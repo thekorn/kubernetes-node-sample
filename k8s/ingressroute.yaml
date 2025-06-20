@@ -1,0 +1,13 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: node-sample-ingress
+spec:
+  entryPoints:
+    - web
+  routes:
+  - match: Host(`hallo.fritz.box`)
+    kind: Rule
+    services:
+    - name: node-sample-service
+      port: 80
